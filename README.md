@@ -2,6 +2,9 @@
 
 Uma aplicação em Python que utiliza a API da ElevenLabs para geração de texto-para-fala (TTS) e fala-para-fala (S2S) com suporte a rodízio de chaves de API. Construída com Gradio para uma interface web interativa, esta ferramenta permite aos usuários gerar áudios a partir de texto, gerenciar chaves de API e reproduzir arquivos de áudio gerados. O projeto é organizado com scripts modulares e abas para uma experiência de usuário limpa.
 
+## ATENÇÃO
+**"Esta ferramenta foi desenvolvida para fins legítimos e educacionais. O autor não se responsabiliza por qualquer uso indevido, ilegal ou antiético da aplicação, incluindo violações de direitos autorais, privacidade ou termos de serviço da ElevenLabs. O uso responsável é de exclusiva responsabilidade do usuário."**
+
 ## Funcionalidades
 - **Texto-para-Fala (TTS):** Converte texto em áudio usando diversos modelos e configurações de voz da ElevenLabs.
 - **Fala-para-Fala (S2S):** Transforma áudio de entrada em uma voz diferente usando as capacidades S2S da ElevenLabs.
@@ -36,12 +39,16 @@ ElevenLabsSwapAPI/
 ├── api_status.json     # Arquivo JSON rastreando o status de uso das APIs
 └── README.md           # Este arquivo
 ```
+## RECOMENDADO USAR APENAS PELO COLAB
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/drive/1UZKzeqjIeEyvq9nPx7s_4mU6xlkZQn_R?usp=sharing#scrollTo=pa36OeArowme](https://colab.research.google.com/drive/19vYsQCDNjkLJADeJG3oZ6lh2Lmm_EYJp?usp=sharing)) <br>
+- Use 2 api por vez, acabando, resete o ambiente no colab e utilize novas api
+- Pode ter quantas chaves quiser, cada conta que você cria, libera 10 mil, e **todo mês ela reseta**, então guarde a conta, se tiver 10 contas, terá 100 mil, se usar turbo v2.5, tera 200mil tokens.
+- Recomendo usar de 2 em 2 api pelo google colab, pois troca o IP de dificilmente irá dar ban. (O IP é trocado quando reseta o colab o IP muda)
 
 ## Pré-requisitos
 - Python 3.8+
 - Chave(s) de API da ElevenLabs (Inscreva-se em [ElevenLabs](https://elevenlabs.io) para obter uma)
-- Pode ter quantas chaves quiser, cada conta que você cria, libera 10 mil, e todo mês ela reseta, então guarde a conta, se tiver 10 contas, terá 100 mil, se usar turbo v2.5, tera 200mil tokens.
-- Recomendo usar de 2 em 2 api pelo google colab, pois troca o IP de dificilmente irá dar ban.
+
 
 ## Instalação
 
@@ -112,5 +119,3 @@ Sinta-se à vontade para enviar issues ou pull requests para melhorar o projeto.
 ## Agradecimentos
 - Construído com [Gradio](https://gradio.app) para a interface de usuário.
 - Alimentado por [ElevenLabs](https://elevenlabs.io) para capacidades de TTS e S2S. 
-
-"Esta ferramenta foi desenvolvida para fins legítimos e educacionais. O autor não se responsabiliza por qualquer uso indevido, ilegal ou antiético da aplicação, incluindo violações de direitos autorais, privacidade ou termos de serviço da ElevenLabs. O uso responsável é de exclusiva responsabilidade do usuário."
